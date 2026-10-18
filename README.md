@@ -89,7 +89,3 @@ src/
 - Search and pagination
 - Image upload
 - Better error handling and form validation
-
-## Author
-
-FPT University project – SmartNews CMS

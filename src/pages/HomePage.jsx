@@ -141,12 +141,62 @@ export default function HomePage() {
 
       <section className="signal-strip" aria-label="SmartNews principles">
         <div className="signal-track">
-          <span>Independent reading</span><i>✦</i>
-          <span>Multi-source ready</span><i>✦</i>
-          <span>Clean interface</span><i>✦</i>
-          <span>Newsroom workflow</span><i>✦</i>
-          <span>Independent reading</span><i>✦</i>
-          <span>Multi-source ready</span><i>✦</i>
+
+          <div className="signal-group">
+            <span>Independent reading</span>
+            <i>✦</i>
+
+            <span>Multi-source ready</span>
+            <i>✦</i>
+
+            <span>Clean interface</span>
+            <i>✦</i>
+
+            <span>Newsroom workflow</span>
+            <i>✦</i>
+          </div>
+
+          <div className="signal-group" aria-hidden="true">
+            <span>Independent reading</span>
+            <i>✦</i>
+
+            <span>Multi-source ready</span>
+            <i>✦</i>
+
+            <span>Clean interface</span>
+            <i>✦</i>
+
+            <span>Newsroom workflow</span>
+            <i>✦</i>
+          </div>
+
+          <div className="signal-group" aria-hidden="true">
+            <span>Independent reading</span>
+            <i>✦</i>
+
+            <span>Multi-source ready</span>
+            <i>✦</i>
+
+            <span>Clean interface</span>
+            <i>✦</i>
+
+            <span>Newsroom workflow</span>
+            <i>✦</i>
+          </div>
+
+          <div className="signal-group" aria-hidden="true">
+            <span>Independent reading</span>
+            <i>✦</i>
+
+            <span>Multi-source ready</span>
+            <i>✦</i>
+
+            <span>Clean interface</span>
+            <i>✦</i>
+
+            <span>Newsroom workflow</span>
+            <i>✦</i>
+          </div>
         </div>
       </section>
 

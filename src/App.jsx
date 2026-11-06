@@ -9,6 +9,8 @@ import LoginPage from './pages/LoginPage.jsx'
 import NotFoundPage from './pages/NotFoundPage.jsx'
 import ProfilePage from './pages/ProfilePage.jsx'
 import RegisterPage from './pages/RegisterPage.jsx'
+import NewsroomLayout from './layouts/NewsroomLayout.jsx'
+import NewsroomModulePage from './pages/NewsroomModulePage.jsx'
 
 export default function App() {
   return (
@@ -24,7 +26,10 @@ export default function App() {
 
           <Route element={<ProtectedRoute />}>
             <Route path="/profile" element={<ProfilePage />} />
-            <Route path="/dashboard" element={<DashboardPage />} />
+            <Route element={<NewsroomLayout />}>
+              <Route path="/dashboard" element={<DashboardPage />} />
+              <Route path="/newsroom/:module" element={<NewsroomModulePage />} />
+            </Route>
           </Route>
 
           <Route path="*" element={<NotFoundPage />} />

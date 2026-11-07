@@ -11,6 +11,7 @@ import ProfilePage from './pages/ProfilePage.jsx'
 import RegisterPage from './pages/RegisterPage.jsx'
 import NewsroomLayout from './layouts/NewsroomLayout.jsx'
 import NewsroomModulePage from './pages/NewsroomModulePage.jsx'
+import ArticlesPage from './pages/newsroom/ArticlesPage.jsx'
 
 export default function App() {
   return (
@@ -28,6 +29,7 @@ export default function App() {
             <Route path="/profile" element={<ProfilePage />} />
             <Route element={<NewsroomLayout />}>
               <Route path="/dashboard" element={<DashboardPage />} />
+              <Route path="/newsroom/articles" element={<ArticlesPage />} />
               <Route path="/newsroom/:module" element={<NewsroomModulePage />} />
             </Route>
           </Route>

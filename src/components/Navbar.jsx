@@ -42,6 +42,7 @@ export default function Navbar() {
               Trang chủ
             </NavLink>
             <a href="/#latest">Tin mới</a>
+            <NavLink to="/stories">Multi-source</NavLink>
             <a href="/#why-smartnews">Khám phá</a>
 
             {user && <NavLink to="/dashboard">Newsroom</NavLink>}

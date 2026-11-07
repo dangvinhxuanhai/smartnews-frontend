@@ -15,6 +15,8 @@ import ArticlesPage from './pages/newsroom/ArticlesPage.jsx'
 import ExternalSourcesPage from './pages/newsroom/ExternalSourcesPage.jsx'
 import ExternalArticlesPage from './pages/newsroom/ExternalArticlesPage.jsx'
 import StoriesPage from './pages/newsroom/StoriesPage.jsx'
+import PublicStoriesPage from './pages/PublicStoriesPage.jsx'
+import PublicStoryDetailPage from './pages/PublicStoryDetailPage.jsx'
 
 export default function App() {
   return (
@@ -27,7 +29,9 @@ export default function App() {
           <Route path="/articles/:id" element={<ArticleDetailPage />} />
           <Route path="/login" element={<LoginPage />} />
           <Route path="/register" element={<RegisterPage />} />
-
+          <Route path="/stories" element={<PublicStoriesPage />} />
+          <Route path="/stories/:id"  element={<PublicStoryDetailPage />} />
+          
           <Route element={<ProtectedRoute />}>
             <Route path="/profile" element={<ProfilePage />} />
             <Route element={<NewsroomLayout />}>

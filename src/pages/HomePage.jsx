@@ -4,6 +4,7 @@ import { articleApi } from '../api/articleApi.js'
 import ArticleCard from '../components/ArticleCard.jsx'
 import { getApiError } from '../utils/apiError.js'
 import { formatDate, getExcerpt, getReadingTime } from '../utils/formatters.js'
+import HomeStorySection from '../components/HomeStorySection.jsx'
 
 function FeaturedStory({ article }) {
   if (!article) return null
@@ -199,6 +200,8 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      <HomeStorySection />
 
       <section className="content-section page-shell" id="latest">
         <div className="section-header-row">

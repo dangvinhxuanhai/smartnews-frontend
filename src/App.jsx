@@ -13,6 +13,7 @@ import NewsroomLayout from './layouts/NewsroomLayout.jsx'
 import NewsroomModulePage from './pages/NewsroomModulePage.jsx'
 import ArticlesPage from './pages/newsroom/ArticlesPage.jsx'
 import ExternalSourcesPage from './pages/newsroom/ExternalSourcesPage.jsx'
+import ExternalArticlesPage from './pages/newsroom/ExternalArticlesPage.jsx'
 
 export default function App() {
   return (
@@ -32,6 +33,7 @@ export default function App() {
               <Route path="/dashboard" element={<DashboardPage />} />
               <Route path="/newsroom/articles" element={<ArticlesPage />} />
               <Route path="/newsroom/sources" element={<ExternalSourcesPage />} />
+              <Route path="/newsroom/external-articles" element={<ExternalArticlesPage />} />
               <Route path="/newsroom/:module" element={<NewsroomModulePage />} />
             </Route>
           </Route>
